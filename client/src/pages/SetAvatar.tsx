@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Buffer } from "buffer";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import useTitle from "../hooks/useTitle";
 import { Box, Container, Typography, Button } from "@mui/material";
 import CircularProgress from "@mui/material/CircularProgress";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const SetAvatar = () => {
+  useTitle("Avatar")
   const [avatars, setAvatars] = useState<String[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [selectedAvatar, setSelectedAvatar] = useState<number | null>(null);

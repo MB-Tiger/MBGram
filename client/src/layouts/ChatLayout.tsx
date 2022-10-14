@@ -1,13 +1,14 @@
-import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { Box, Typography } from "@mui/material";
+import Chats from "../pages/Chats";
+import { Box, CssBaseline } from "@mui/material";
 
 const ChatLayout = () => {
   return (
-    <>
+    <Box display="flex" width="100%">
+      <CssBaseline />
       <Navbar />
-      <Outlet />
-    </>
+      <Chats />
+    </Box>
   );
 };
 

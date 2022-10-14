@@ -37,10 +37,10 @@ const Contacts: React.FC<props> = ({
       component="div"
       sx={{
         width: "100%",
-        height: "92.2vh",
+        height: "100%",
         color: "white",
         backgroundColor: "#20202f",
-        overflowY: "auto",
+        overflow: "auto",
       }}
     >
       <Box

@@ -5,7 +5,7 @@ import ChatInput from "./ChatInput";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Box } from "@mui/material";
+import { Box, Toolbar } from "@mui/material";
 
 interface UserType {
   avatarImage?: string;
@@ -96,12 +96,14 @@ const ChatContainer: React.FC<props> = ({
   return (
     <Box
       component="main"
-      height="92.2vh"
+      height="100vh"
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
       bgcolor="#131324"
+      sx={{flexGrow: 1}}
     >
+      <Toolbar />
       <ChatHeader currentChatUser={currentChatUser} />
       <Messages messages={messages} scrollRef={scrollRef} />
       <ChatInput sendMessage={sendMessage} />

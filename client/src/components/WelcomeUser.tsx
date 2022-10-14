@@ -5,9 +5,10 @@ const WelcomeUser = ({ currentUser }: any) => {
     <Container
       component="div"
       sx={{
-        height: "92.2vh",
+        height: "100vh",
         display: "flex",
         flexDirection: "column",
+        flexGrow: 1,
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",

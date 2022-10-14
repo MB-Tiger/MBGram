@@ -16,8 +16,9 @@ const Navbar = () => {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       sx={{
+        width: "100%",
         backgroundColor: "#efefef",
         padding: "10px 25px",
         boxShadow: "0 1px 3px 0 rgb(0 0 0 / 0.1)",
@@ -25,6 +26,7 @@ const Navbar = () => {
         justifyContent: "space-between",
         alignItems: "center",
         flexDirection: "row",
+        zIndex: (theme) => theme.zIndex.drawer + 1,
       }}
     >
       <Box component="div" display="flex" alignItems="center" gap="10px">

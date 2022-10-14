@@ -31,14 +31,14 @@ const ChatInput = ({ sendMessage }: any) => {
       alignItems="center"
       gap="16px"
       px="20px"
-      mb="20px"
+      py="15px"
     >
       <EmojiEmotionsIcon
         sx={{ cursor: "pointer", fontSize: "30px", color: "#FFC83D" }}
         onClick={() => setShowEmoji(!showEmoji)}
       />
       {showEmoji && (
-        <Box position="absolute" top="-480px">
+        <Box position="absolute" top="-460px">
           <EmojiPicker onEmojiClick={handleEmojiClick} />
         </Box>
       )}
