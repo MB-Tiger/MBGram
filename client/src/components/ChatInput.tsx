@@ -39,7 +39,7 @@ const ChatInput = ({ sendMessage }: any) => {
       />
       {showEmoji && (
         <Box position="absolute" top="-460px">
-          <EmojiPicker onEmojiClick={handleEmojiClick} />
+          <EmojiPicker width={290} onEmojiClick={handleEmojiClick} />
         </Box>
       )}
 

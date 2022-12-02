@@ -21,8 +21,10 @@ const ChatHeader: React.FC<props> = ({ currentChatUser }) => {
       component="div"
       display="flex"
       alignItems="center"
+      position="relative"
+      top="56.5px"
       px="20px"
-      py="16px"
+      py="12px"
       gap="12px"
       color="white"
       bgcolor="#20202f"
@@ -30,8 +32,7 @@ const ChatHeader: React.FC<props> = ({ currentChatUser }) => {
     >
       <Box
         component="img"
-        width="55px"
-        borderRadius="999px"
+        sx={{ width: { xs: "45px", md: "55px" }, borderRadius: "999px" }}
         src={`data:image/svg+xml;base64,${currentChatUser?.avatarImage}`}
         alt="avatar"
       />

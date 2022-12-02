@@ -23,7 +23,7 @@ const Messages: React.FC<props> = ({ messages, scrollRef }) => {
       p="1rem 2rem"
       sx={{overflowY: "auto"}}
     >
-      {messages.map((message, i) => (
+      {messages.length ? messages.map((message, i) => (
         <Box
           key={i}
           ref={scrollRef}
@@ -47,7 +47,8 @@ const Messages: React.FC<props> = ({ messages, scrollRef }) => {
             <Typography>{message.message}</Typography>
           </Box>
         </Box>
-      ))}
+      )) : <div>No Message yet!</div>
+      }
     </Box>
   );
 };

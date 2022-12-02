@@ -18,7 +18,7 @@ const WelcomeUser = ({ currentUser }: any) => {
     >
       <Box
         component="img"
-        width="550px"
+        sx={{ width: { xs: "250px", sm: "380px", md: "450px", lg: "550px" } }}
         src={require("../assets/img/Wellcome.png")}
         alt="Welcome"
       />

@@ -49,7 +49,8 @@ const Contacts: React.FC<props> = ({
         alignItems="center"
         bgcolor="#30245c"
         gap="12px"
-        p="16px"
+        px="16px"
+        py="12px"
       >
         <Box
           component="img"

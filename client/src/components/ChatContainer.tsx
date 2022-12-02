@@ -101,9 +101,8 @@ const ChatContainer: React.FC<props> = ({
       flexDirection="column"
       justifyContent="space-between"
       bgcolor="#131324"
-      sx={{flexGrow: 1}}
+      sx={{ flexGrow: 1 }}
     >
-      <Toolbar />
       <ChatHeader currentChatUser={currentChatUser} />
       <Messages messages={messages} scrollRef={scrollRef} />
       <ChatInput sendMessage={sendMessage} />
